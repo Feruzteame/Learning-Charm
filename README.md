@@ -1,5 +1,5 @@
 # Learning-Carm
-- a website which can help you to find the right universtity based on the location.
+- A website which can help you to find the right universtity based on the location.
 
 
 
@@ -8,7 +8,7 @@
    - I should be able to find a universty in a country which is I choose.
 - <b>As Developer</b> 
    - To work / using Api
-   - be able to manage a data which is find via Api
+   - Able to manage a data which is find via Api
    - Show design skill
    
 ## Technologies
