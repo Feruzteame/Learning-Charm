@@ -1,3 +1,14 @@
+.box_container_background{
+  background-color: whitesmoke;
+}
+.span_color{
+ color: brown;
+}
+.backgroundcolor_boxes{
+  background-color: lightblue;
+}
+
+
 body{
   background-color: white;
   margin: 0;
@@ -7,9 +18,9 @@ body{
     text-align: center;
   }
   #form_container{
+    @extend .box_container_background;
     margin: 0 0 0 0;
     text-align: center;
-    background-color: whitesmoke;
     padding: 2%;
     border-bottom: 3px black solid;
   }
@@ -29,9 +40,9 @@ body{
     width: 70%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    background-color: lightblue;
     padding: 2%;
     border-radius: 2px;
+    @extend .backgroundcolor_boxes;
   }
   #box{
     margin: 10px;
@@ -39,7 +50,7 @@ body{
     height: auto;
     min-height: 200px;
     border-radius: 5px;
-    background-color: whitesmoke;
+    @extend .box_container_background;
   }
   .liked_box_container{
     overflow: scroll;
@@ -48,7 +59,7 @@ body{
     width: 20%;
     height: 700px;
     margin: 0% 5% 5% 1%;
-    background-color: lightblue;
+    @extend .backgroundcolor_boxes;
     padding: 2%;
     border-radius: 2px;
   }
@@ -68,11 +79,10 @@ body{
   footer{
     margin: 0;
     width: 100%;
-    background-color: #add8e6;
+    @extend .backgroundcolor_boxes;
     height: auto;
     min-height: 100px;
     display: flex;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     border-top: 3px black solid;
   }
   #logo{
@@ -94,7 +104,7 @@ body{
     text-decoration: none;
   }
   a:hover{
-    color: brown;
+    @extend .span_color;
     text-decoration: underline;
   }
   li{
@@ -109,10 +119,19 @@ body{
   }
   #data_length{
     text-decoration: overline;
-    color: brown;
+    @extend .span_color
   }
-  .liked_unliked_button{
+  .liked_button, .unliked_button{
     margin: 5% 70% 1% 0;
+    border-radius: 2px;
+  }
+  .liked_button:hover{
+    background-color: brown;
+    border: 2px solid brown;
+  }
+  .unliked_button:hover{
+    background-color: black;
+    border: 2px solid black;
   }
   #small_screen_header{
     display: none;
