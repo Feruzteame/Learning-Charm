@@ -14,129 +14,129 @@ body{
   margin: 0;
   padding: 0;
  
-  h1{
-    text-align: center;
-  }
-  #form_container{
-    @extend .box_container_background;
-    margin: 0 0 0 0;
-    text-align: center;
-    padding: 2%;
-    border-bottom: 3px black solid;
-  }
-  #input{
-    width: 30%;
-    height: 40px;
-    border-radius: 5px;
-    border: black 2px solid;
-  }
-  article{
-    display: flex;
-    margin: 5% 1% 5% 5%;
-  }
-  .box_container{
-    overflow: scroll;
-    height: 700px;
-    width: 70%;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    padding: 2%;
-    border-radius: 2px;
-    @extend .backgroundcolor_boxes;
-  }
-  #box{
-    margin: 10px;
-    text-align: center;
-    height: auto;
-    min-height: 200px;
-    border-radius: 5px;
-    @extend .box_container_background;
-  }
-  .liked_box_container{
-    overflow: scroll;
-    display: flex;
-    flex-direction: column;
-    width: 20%;
-    height: 700px;
-    margin: 0% 5% 5% 1%;
-    @extend .backgroundcolor_boxes;
-    padding: 2%;
-    border-radius: 2px;
-  }
-  #liked_box{
-    margin: 5px;
-    text-align: center;
-    height: auto;
-    min-height: 200px;
-    width: 95%;
-    border-radius: 5px;
-    background-color: whitesmoke;
-    padding: 2%;
-  }
-  .countryname{
-    text-decoration:underline;
-  }
-  footer{
-    margin: 0;
-    width: 100%;
-    @extend .backgroundcolor_boxes;
-    height: auto;
-    min-height: 100px;
-    display: flex;
-    border-top: 3px black solid;
-  }
-  #logo{
-    padding: 3% 0 2% 10px;
-    width: 70px;
-    height: 70px;
-    margin-left: 30% ;
-  }
-  ul{
-    margin: 3% 10px 10px 10%;
-  }
-  #universty_web{
-    display: flex;
-    margin-left: 30%;
-  }
-  a{
-    color: gray;
-    font-weight: bold;
-    text-decoration: none;
-  }
-  a:hover{
-    @extend .span_color;
-    text-decoration: underline;
-  }
-  li{
-    list-style: none;
-  }
-  span{
-    font-weight: bold;
-  }
-  #copyRight{
-    margin-top: 20px;
-    font-size: 80%;
-  }
-  #data_length{
-    text-decoration: overline;
-    @extend .span_color
-  }
-  .liked_button, .unliked_button{
-    margin: 5% 70% 1% 0;
-    border-radius: 2px;
-  }
-  .liked_button:hover{
-    background-color: brown;
-    border: 2px solid brown;
-  }
-  .unliked_button:hover{
-    background-color: black;
-    border: 2px solid black;
-  }
-  #small_screen_header{
-    display: none;
-  }
-  
+    h1{
+      text-align: center;
+    }
+    #form_container{
+      @extend .box_container_background;
+      margin: 0 0 0 0;
+      text-align: center;
+      padding: 2%;
+      border-bottom: 3px black solid;
+    }
+    #input{
+      width: 30%;
+      height: 40px;
+      border-radius: 5px;
+      border: black 2px solid;
+    }
+    article{
+      display: flex;
+      margin: 5% 1% 5% 5%;
+    }
+    .box_container{
+      overflow: scroll;
+      height: 700px;
+      width: 70%;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      padding: 2%;
+      border-radius: 2px;
+      @extend .backgroundcolor_boxes;
+    }
+    #box{
+      margin: 10px;
+      text-align: center;
+      height: auto;
+      min-height: 200px;
+      border-radius: 5px;
+      @extend .box_container_background;
+    }
+    .liked_box_container{
+      overflow: scroll;
+      display: flex;
+      flex-direction: column;
+      width: 20%;
+      height: 700px;
+      margin: 0% 5% 5% 1%;
+      @extend .backgroundcolor_boxes;
+      padding: 2%;
+      border-radius: 2px;
+    }
+    #liked_box{
+      margin: 5px;
+      text-align: center;
+      height: auto;
+      min-height: 200px;
+      width: 95%;
+      border-radius: 5px;
+      background-color: whitesmoke;
+      padding: 2%;
+    }
+    .countryname{
+      text-decoration:underline;
+    }
+    footer{
+      margin: 0;
+      width: 100%;
+      @extend .backgroundcolor_boxes;
+      height: auto;
+      min-height: 100px;
+      display: flex;
+      border-top: 3px black solid;
+    }
+    #logo{
+      padding: 3% 0 2% 10px;
+      width: 70px;
+      height: 70px;
+      margin-left: 30% ;
+    }
+    ul{
+      margin: 3% 10px 10px 10%;
+    }
+    #universty_web{
+      display: flex;
+      margin-left: 30%;
+    }
+    a{
+      color: gray;
+      font-weight: bold;
+      text-decoration: none;
+    }
+    a:hover{
+      @extend .span_color;
+      text-decoration: underline;
+    }
+    li{
+      list-style: none;
+    }
+    span{
+      font-weight: bold;
+    }
+    #copyRight{
+      margin-top: 20px;
+      font-size: 80%;
+    }
+    #data_length{
+      text-decoration: overline;
+      @extend .span_color
+    }
+    .liked_button, .unliked_button{
+      margin: 5% 70% 1% 0;
+      border-radius: 2px;
+    }
+    .liked_button:hover{
+      background-color: brown;
+      border: 2px solid brown;
+    }
+    .unliked_button:hover{
+      background-color: black;
+      border: 2px solid black;
+    }
+    #small_screen_header{
+      display: none;
+    }
+    
 }
 
 
