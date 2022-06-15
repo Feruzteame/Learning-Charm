@@ -84,7 +84,7 @@ function App() {
                    let liked = schoolLiked(school.name)
                   return (
                     <div id='box' key={uuid()}>
-                      <button className='liked_unliked_button' onClick={() => likeSchool(school)} disabled={liked} ><BsHeartFill style={like_icon_Style}/></button>
+                      <button className='liked_button' onClick={() => likeSchool(school)} disabled={liked} ><BsHeartFill style={like_icon_Style}/></button>
                       <h3>{school.name}</h3>
                       <div id='universty_web'>
                         <BsArrowRight style={iconStyle} />
@@ -107,7 +107,7 @@ function App() {
                         <BsArrowRight style={iconStyle} />
                         <a href={school.web_pages} target="_blank" rel="noreferrer">Visit website</a>
                       </div>
-                    <button className='liked_unliked_button' name={school.name} onClick={handleRemoveItem}><TiDelete style={delete_icon_Style }/></button>
+                    <button className='unliked_button' name={school.name} onClick={handleRemoveItem}><TiDelete style={delete_icon_Style }/></button>
                     </div>
                   ))}
             </section>
