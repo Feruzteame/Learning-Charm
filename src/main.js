@@ -57,7 +57,7 @@ function App() {
           return school.name === name; 
       });
     }
-    
+ 
     // remove from fav box
     const handleRemoveItem = (e) => {
       const name = e.target.getAttribute("name")
