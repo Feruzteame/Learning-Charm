@@ -2,36 +2,65 @@ body{
   background-color: white;
   margin: 0;
   padding: 0;
+ 
   h1{
     text-align: center;
   }
   #form_container{
-    margin: 2% 0 0 0;
+    margin: 0 0 0 0;
     text-align: center;
+    background-color: whitesmoke;
+    padding: 2%;
+    border-bottom: 3px lightblue solid;
   }
   #input{
-    width: 250px;
+    width: 30%;
     height: 40px;
     border-radius: 5px;
     border: black 2px solid;
   }
-  #box_container{
+  article{
+    display: flex;
+    margin: 5% 1% 5% 5%;
+  }
+  .box_container{
     overflow: scroll;
-    height: 500px;
+    height: 700px;
+    width: 70%;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    margin: 1% 5% 5% 5%;
+    grid-template-columns: 1fr 1fr 1fr;
     background-color: lightblue;
     padding: 2%;
-    border-radius: 10px;
+    border-radius: 2px;
   }
   #box{
     margin: 10px;
     text-align: center;
     height: auto;
-    min-height: 150px;
+    min-height: 200px;
     border-radius: 5px;
     background-color: whitesmoke;
+  }
+  .liked_box_container{
+    overflow: scroll;
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    height: 700px;
+    margin: 0% 5% 5% 1%;
+    background-color: lightblue;
+    padding: 2%;
+    border-radius: 2px;
+  }
+  #liked_box{
+    margin: 5px;
+    text-align: center;
+    height: auto;
+    min-height: 200px;
+    width: 95%;
+    border-radius: 5px;
+    background-color: whitesmoke;
+    padding: 2%;
   }
   .countryname{
     text-decoration:underline;
@@ -81,6 +110,9 @@ body{
   #data_length{
     text-decoration: overline;
     color: brown;
+  }
+  .liked_unliked_button{
+    margin: 5% 70% 1% 0;
   }
   
 }
