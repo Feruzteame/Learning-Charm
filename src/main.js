@@ -77,6 +77,9 @@ function App() {
         <article>
 
               <section className='box_container'>
+                 <div id="small_screen_header">
+                   <h3> List Of Universities In </h3> {country === ''? <h3 className='countryname'>BELGIUM</h3>: <h3 className='countryname'>{country}</h3>}
+                </div> 
                  {data.map((school) => {
                    let liked = schoolLiked(school.name)
                   return (
@@ -92,10 +95,12 @@ function App() {
                 })}
               </section>
 
+              
             <section className='liked_box_container'>
-                <h3>Your dream universities</h3>
+                  <h3>Your Dream Schools</h3>
                   {liked_schools.map((school) => (
                     <div id='liked_box' key={uuid()}>
+                      
                       <h3>{school.country}</h3>
                       <h3>{school.name}</h3>
                       <div id='universty_web'>
