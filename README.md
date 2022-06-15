@@ -29,4 +29,9 @@
 1. `git clone git@github.com:Feruzteame/Learning-Charm.git`
 2. `npm start`
 
+## Work flow
+- [Check here](https://github.com/Feruzteame/Learning-Charm/projects/1)
+
+## Contrubitors
+- [FERUZ](https://github.com/Feruzteame)
 
