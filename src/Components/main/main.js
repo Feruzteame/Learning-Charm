@@ -2,10 +2,12 @@
 import React,{useState,useEffect} from 'react';
 import './style.scss';
 import { v4 as uuid } from 'uuid';
-import logo from './images/logo.png'
+import logo from '../images/logo.png'
 import { BsArrowRight } from "react-icons/bs";
 import { BsHeartFill } from "react-icons/bs";
 import { TiDelete } from "react-icons/ti";
+
+
 
 const iconStyle = {
   fontSize: "90%",
@@ -19,7 +21,7 @@ const like_icon_Style = {
   color: "blue"
 }
 
-function App() {
+function Main() {
     const [data, setdata] = useState([]);
     const [country, setCountry] = useState("")
     const [liked_schools, pushLikedShool] = useState([]);
@@ -64,21 +66,18 @@ function App() {
       pushLikedShool(liked_schools.filter(item => item.name !== name))
       };
 
-    
-
   return (
     <main className="container">
-
+  
           <section id='form_container'>
               <input id="input" type="text" placeholder="put country name here" value={country} onChange={e => setCountry(e.target.value)}></input>
-              <h2> We Found <i id='data_length'>{data.length ++}</i> Universities In  </h2> {country === ''? <h2 className='countryname'>BELGIUM</h2>: <h2 className='countryname'>{country}</h2>}
+              <h2> We Found <i id='data_length'>{data.length + 1}</i> Universities In  </h2> {country === ''? <h2 className='countryname'>BELGIUM</h2>: <h2 className='countryname'>{country}</h2>}
           </section>
 
         <article>
-
               <section className='box_container'>
                  <div id="small_screen_header">
-                   <h3> List Of Universities In </h3> {country === ''? <h3 className='countryname'>BELGIUM</h3>: <h3 className='countryname'>{country}</h3>}
+                   <h3> List Of Universities In </h3> {country === ''? <h3 className='countryname'>BELGIUM</h3>: <h3 className='countryname'>{country + 1}</h3>}
                 </div> 
                  {data.map((school) => {
                    let liked = schoolLiked(school.name)
@@ -127,4 +126,4 @@ function App() {
       );
     }
 
-export default App;
+export default Main;

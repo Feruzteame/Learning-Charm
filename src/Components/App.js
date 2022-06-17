@@ -1,0 +1,19 @@
+import { BrowserRouter, Routes, Route} from "react-router-dom";
+import Main from '../Components/main/main';
+import Auth from "./Auth/Auth_page";
+
+function App() {
+	
+	return (
+		
+    <div className="App">
+    <BrowserRouter>
+        <Routes>
+            <Route path="/" exact element={<Auth />} />
+            <Route path="/dashboard" exact element={<Main />} />
+        </Routes>
+    </BrowserRouter>
+  </div>
+	);
+}
+export default App;
