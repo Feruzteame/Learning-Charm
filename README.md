@@ -17,8 +17,8 @@
 
 - <b>As Developer</b> 
    - To work / using  with Api
-   - Able to work a data which is find via Api 
-   - integrate other platform with the app
+   - Able to work with a data which I find from Api 
+   - integrate other platform to the app
    - Show some design skill
    
 ## Technologies
