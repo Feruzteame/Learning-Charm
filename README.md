@@ -35,7 +35,8 @@
 ## You need to work on the project or need to see on the local host
 
 1. `git clone git@github.com:Feruzteame/Learning-Charm.git`
-2. `npm start` (The app should be run only on localhost:3000 because the callback for the Auth0 is `localhost:3000`)
+2. `npm i`
+3. `npm start` (The app should be run only on localhost:3000 because the callback for the Auth0 is `localhost:3000`)
 
 ## Work flow
 - [Check here](https://github.com/Feruzteame/Learning-Charm/projects/1)
