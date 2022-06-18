@@ -1,13 +1,14 @@
 .box_container_background{
   background-color: whitesmoke;
 }
+
 .span_color{
  color: brown;
 }
-.backgroundcolor_boxes{
+
+.background_color_boxes{
   background-color: lightblue;
 }
-
 
 body{
   background-color: white;
@@ -17,6 +18,7 @@ body{
     h1{
       text-align: center;
     }
+    
     #form_container{
       @extend .box_container_background;
       margin: 0 0 0 0;
@@ -24,16 +26,19 @@ body{
       padding: 2%;
       border-bottom: 3px black solid;
     }
+    
     #input{
       width: 30%;
       height: 40px;
       border-radius: 5px;
       border: black 2px solid;
     }
+    
     article{
       display: flex;
       margin: 5% 1% 5% 5%;
     }
+    
     .box_container{
       overflow: scroll;
       height: 700px;
@@ -42,9 +47,10 @@ body{
       grid-template-columns: 1fr 1fr 1fr;
       padding: 2%;
       border-radius: 2px;
-      @extend .backgroundcolor_boxes;
+      @extend .background_color_boxes;
     }
-    #box{
+    
+    .box{
       margin: 10px;
       text-align: center;
       height: auto;
@@ -52,6 +58,7 @@ body{
       border-radius: 5px;
       @extend .box_container_background;
     }
+    
     .liked_box_container{
       overflow: scroll;
       display: flex;
@@ -59,11 +66,12 @@ body{
       width: 20%;
       height: 700px;
       margin: 0% 5% 5% 1%;
-      @extend .backgroundcolor_boxes;
+      @extend .background_color_boxes;
       padding: 2%;
       border-radius: 2px;
     }
-    #liked_box{
+    
+    .liked_box{
       margin: 5px;
       text-align: center;
       height: auto;
@@ -73,106 +81,127 @@ body{
       background-color: whitesmoke;
       padding: 2%;
     }
-    .countryname{
+
+    .country_name{
       text-decoration:underline;
     }
+
     footer{
       margin: 0;
       width: 100%;
-      @extend .backgroundcolor_boxes;
+      @extend .background_color_boxes;
       height: auto;
       min-height: 100px;
       display: flex;
       border-top: 3px black solid;
     }
+
     #logo{
       padding: 3% 0 2% 10px;
       width: 70px;
       height: 70px;
       margin-left: 30% ;
     }
+
     ul{
       margin: 3% 10px 10px 10%;
     }
-    #universty_web{
+
+    .university_web{
       display: flex;
       margin-left: 30%;
     }
+
     a{
       color: gray;
       font-weight: bold;
       text-decoration: none;
     }
+
     a:hover{
       @extend .span_color;
       text-decoration: underline;
     }
+
     li{
       list-style: none;
     }
+
     span{
       font-weight: bold;
     }
-    #copyRight{
+
+    #copy_right{
       margin-top: 20px;
       font-size: 80%;
     }
+
     #data_length{
       text-decoration: overline;
       @extend .span_color
     }
+    
     .liked_button, .unliked_button{
       margin: 5% 70% 1% 0;
     }
+
     .liked_button:hover,.unliked_button:hover{
       background-color: rgb(163, 93, 93);
       border: 2px solid rgb(163, 93, 93);
     }
+
     #small_screen_header{
       display: none;
     }
-    
 }
 
-
 @media only screen and (max-width: 800px){
-body{
-  article{
-    display: flex;
-    flex-direction: column-reverse;
-  }
-  .box_container{
-    height: 500px;
-    width: 90%;
-    display: grid;
-    grid-template-columns: 1fr;
-  }
-  .liked_box_container{
-    display: grid;
-    grid-template-columns: 1fr ;
-    min-width: 90%;
-    height: auto;
-    min-height: 300px;
-    margin: 1% 5% 5% 1%;
-  }
-  h2{
-   font-size: 20px;
-  }
-  h3{
-    text-align: center;
-    font-size: 15px;
-  }
-  #liked_box{
-    padding: 20px;
-    margin: 5px;
-    text-align: center;
-    min-height: 100px;
-    width: 90%;
-   }
+
+  body{
+
+    article{
+      display: flex;
+      flex-direction: column-reverse;
+    }
+
+    .box_container{
+      height: 500px;
+      width: 90%;
+      display: grid;
+      grid-template-columns: 1fr;
+    }
+
+    .liked_box_container{
+      display: grid;
+      grid-template-columns: 1fr ;
+      min-width: 90%;
+      height: auto;
+      min-height: 300px;
+      margin: 1% 5% 5% 1%;
+    }
+
+    h2{
+    font-size: 20px;
+    }
+
+    h3{
+      text-align: center;
+      font-size: 15px;
+    }
+
+    .liked_box{
+      padding: 20px;
+      margin: 5px;
+      text-align: center;
+      min-height: 100px;
+      width: 90%;
+    }
+
     ul{
       text-align: center;
       margin-left: 0;
     }
+
     #small_screen_header{
       display: block;
     }
